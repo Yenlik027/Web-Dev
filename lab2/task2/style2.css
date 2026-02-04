@@ -1,0 +1,234 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: white;
+    margin:0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    gap: 80px;
+    flex-wrap: wrap;
+    padding: 40px;
+    font-family: 'basicfont';
+}
+ @font-face {
+     font-family: 'basicfont';
+     src: url('basicfont.woff2') format('woff2');
+     font-weight: normal;
+     font-style: normal;}
+@font-face {
+    font-family: 'lefttext';
+    src: url('lefttext.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 700px;
+    padding-top:120px;
+    text-align: center;
+    justify-content: center;
+
+}
+.left .logo {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width:90px;
+    height: 95px;
+
+
+}
+.text_logo{
+    margin-top: -20px;
+    margin-left: -80px;
+    color: #1c1e21;
+    font-weight: 400;
+
+    pointer-events: none;
+    font-family: lefttext;
+    font-size:2.8vw;
+
+
+}
+.closefriends{
+    background:linear-gradient(to right,orange,red,purple);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    display: inline-block;
+}
+.leftimage{
+    position: relative;
+    left: -90px;
+    top:-40px;
+
+}
+.right{
+    max-width: 400px;
+    width: 100%;
+    font-family: 'basicfont';
+}
+.right_text{
+    padding-top: 60px;
+    font-size: 20px;
+}
+
+.form-group {
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+
+}
+
+.form-group input {
+    width: 560px;
+    padding:18px 20px;
+    font-size: 15px;
+    border-radius: 13px;
+    border: 1px solid #b1c5cf;
+    font-family: 'basicfont';
+}
+.form-group input:hover {
+    border-color: #2a3135;
+}
+.form-group input::placeholder {
+    color: #303235;
+    opacity: 70%;
+    font-weight: bold;
+}
+
+.login-btn {
+    width: 560px;
+    padding: 14px;
+    background-color: #7bb4ed;
+    color: white;
+    font-size: 18px;
+    font-weight:bold;
+    border: none;
+    border-radius: 30px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-family: 'basicfont';
+}
+
+.login-btn:hover {
+    background-color: #3f81ed;
+}
+.loginfacebook{
+    width: 560px;
+    padding: 12px;
+    background-color: white;
+    color: black;
+    font-size: 14px;
+    border: 1px solid #b3b9bf;
+    border-radius: 30px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-family: 'basicfont';
+    margin-top:80px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+}
+
+
+.forgot-password {
+    margin-top: 10px;
+    display: block;
+    font-size: 14px;
+    width: 560px;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+.create-btn {
+    width: 560px;
+    padding: 12px;
+    background-color: white;
+    border: 1px solid #1546c1;
+    color: #1546c1;
+    border-radius: 30px;
+    font-size: 14px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-family: 'basicfont';
+
+
+
+
+}
+
+.create-btn:hover {
+    background-color: #F2F2F2;
+}
+.loginfacebook:hover{
+    background-color: #F2F2F2;
+}
+.fcimg{
+    display: block;
+}
+
+
+.vertical-line{
+    position: fixed;
+    top: 0;
+    left:54%;
+    width: 2px;
+    height: 900px;
+    background-color: #E3E3E3;
+}
+
+
+
+.create-btn-wrapper {
+    display: inline-block;
+    position: relative;
+}
+
+.metaimg{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 5px;
+}
+@media (max-width: 1120px) {
+    .vertical-line {
+        display: none;
+    }
+    .left {
+        display: none;
+    }
+    }
+    @media (max-width: 768px){
+    .right {
+        max-width: 90%;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+}
+

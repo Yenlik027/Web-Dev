@@ -1,0 +1,200 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    line-height: 1.5;
+    background-color: white;
+}
+.hero{
+    text-align: center;
+    padding: 60px 20px;
+    margin-bottom: 40px;
+}
+.hero h1{
+    font-size: 48px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+.first_text{
+    font-size: 18px;
+    color: gray;
+    max-width: 900px;
+    margin: 0 auto 30px;
+}
+.hero button{
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 16px 32px;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    transition: background-color 0.2s;
+}
+.hero button:hover{
+    background-color: gray;
+}
+.pricing{
+    margin-bottom: 60px;
+}
+.pricing_cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+}
+.card{
+    width: 340px;
+    overflow: hidden;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: white;
+}
+.head{
+    padding: 32px;
+    border-bottom: 1px solid gray;
+}
+.head h3{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+.subtitle{
+    text-align: center;
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 24px;
+}
+.price{
+    margin-bottom: 24px;
+    text-align: center;
+}
+.amount{
+    font-size: 48px;
+    font-weight: 600;
+}
+.period{
+    font-size: 16px;
+}
+.price-label{
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 4px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    width: fit-content;
+    text-align: center;
+}
+.pricing_btn_2{
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 10px;
+    transition: background-color 0.2s;
+    margin-bottom: 8px;
+}
+.pricing_btn_2:hover{
+    background-color: #2f3335;
+}
+.pricing_btn_1{
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    background-color: white;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 10px;
+    margin-bottom: 8px;
+    border: 1px #a89f9f solid;
+}
+.pricing_btn_1:hover{
+    border-color:black;
+}
+.pricing_btn_3{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    transition: background-color 0.2s;
+
+}
+.pricing_btn_3:hover{
+    background-color: black;
+    color: white;
+}
+.body{
+    padding: 32px;
+    background-color: #F2F2F2;
+}
+.list{
+    color: gray;
+    margin-bottom: 20px;
+}
+.featured_addons h4{
+    color: blue;
+    font-weight: lighter;
+    margin-bottom: 10px;
+}
+.featured_addons li{
+    color: gray;
+}
+.addons{
+    border-radius: 12px;
+    padding: 48px 32px;
+    margin-bottom: 40px;
+}
+
+.addons h2{
+    font-size: 45px;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.addons_container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+.addon_card{
+    border: 1px solid gray;
+    padding: 20px;
+    border-radius: 10px;
+}
+.addon_card:hover{
+    background-color: #e8e6e6;
+}
+.addon_card h3{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+.addon_card p{
+    font-size: 16px;
+    color: gray;
+    margin-bottom: 10px;
+}
+.addon_card a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+}
